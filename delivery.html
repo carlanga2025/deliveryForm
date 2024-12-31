@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Entrega</title>
+    <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1><span><img src="./icon/logistics-delivery.png">Información de Entrega</span></h1>
+        <form id="deliveryForm">
+            <div class="form-row">
+                <input type="text" id="nombre" placeholder="Nombre *" required>
+                <input type="text" id="apellidos" placeholder="Apellidos *" required>
+            </div>
+            <div class="form-row">
+                <input type="text" id="codigoPostal" placeholder="Código Postal *" required>
+                <span class="hint">Ejemplo: 01234</span>
+            </div>
+            <input type="text" id="direccion" placeholder="Direccion *" required>
+            <div class="form-row">
+                <input type="text" id="numeroExterior" placeholder="Número *" required>
+                <input type="text" id="numeroInterior" placeholder="Número Interior">
+            </div>
+            <input type="text" id="infoAdicional" placeholder="Referencias">
+            <div class="form-row">
+                <input type="text" id="distrito" placeholder="Distrito *" required>
+                <input type="text" id="provincia" placeholder="Provincia *" required>
+            </div>
+            <div class="form-row">
+                <input type="text" id="departamento" placeholder="Departamento *" required>
+                <select id="servicio" required>
+                    <option value="" disabled selected>Servicio *</option>
+                    <option value="Retiro en Almacen">Retiro en Almacen</option>
+                    <option value="Entrega a Domicilio">Entrega a Domicilio</option>
+                    <option value="Envio Urgente">Envio Urgente</option>
+                    <!-- Agrega más opciones aquí -->
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="delivery.js"></script>
+</body>
+</html>
